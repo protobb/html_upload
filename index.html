@@ -8,11 +8,11 @@
 </head>
 
 <body>
-  <input type='file' />
+  <input1 type='file' />
   <img />
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>
-    $('input').on('change', function(e){      
+    $('input1').on('change', function(e){      
       const file = this.files[0];
       const objectURL = URL.createObjectURL(file);
       
@@ -20,17 +20,17 @@
     });
   </script>
   
-  <img src="input">
+  <img src="input1">
   
   
   
   
   
-  <input type='file' />
+  <input2 type='file' />
   <img />
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>
-    $('input').on('change', function(e){      
+    $('input2').on('change', function(e){      
       const file = this.files[0];
       const objectURL = URL.createObjectURL(file);
       
@@ -38,7 +38,7 @@
     });
   </script>
   
-  <img src="input">
+  <img src="input2">
   
 </body>
   
