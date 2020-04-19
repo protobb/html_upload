@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   
-<title>03_html upload</title> 
+<title>04_html upload</title> 
   
 <head>
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <img />
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>
-    $('input01').on('change', function(e){      
+    $('input').on('change', function(e){      
       const file = this.files[0];
       const objectURL = URL.createObjectURL(file);
       
@@ -30,12 +30,14 @@
   <img />
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>
-    $('input02').on('change', function(e){      
+    if (input02){
+    $('input').on('change', function(e){      
       const file = this.files[0];
       const objectURL = URL.createObjectURL(file);
       
       $('img').attr('src', objectURL);
     });
+    }
   </script>
   
   <img id="input02">
