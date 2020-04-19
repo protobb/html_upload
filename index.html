@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
   
-<title>html upload</title>
-
-<form id="upload" enctype="multipart/form-data" method="post"> 
-    <input type="file" name="file" id="pic"/> 
-    <input type="button" value="submit" onclick="uploadPic();"/> 
-    <span class="showUrl"></span> 
-    <img src="" class="showPic" alt=""> 
-</form> 
+<title>html upload</title> 
   
 <script>  
 unction uploadPic() { 
@@ -35,5 +28,12 @@ unction uploadPic() {
     }) 
 } 
 </script>
+  
+<form id="upload" enctype="multipart/form-data" method="post"> 
+    <input type="file" name="file" id="pic"/> 
+    <input type="button" value="submit" onclick="uploadPic();"/> 
+    <span class="showUrl"></span> 
+    <img src="" class="showPic" alt=""> 
+</form>
   
 </html>
